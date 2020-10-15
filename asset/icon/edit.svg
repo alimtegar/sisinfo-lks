@@ -1,0 +1,10 @@
+<svg width='128px' height='128px' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+<polygon fill="#90CAF9" points="36,41 8,41 8,3 27,3 36,12 "></polygon>
+<polygon fill="#E1F5FE" points="34.5,13 26,13 26,4.5 "></polygon>
+<path fill="#E57373" d="M40.678,25.142l-2.82-2.819c-0.429-0.43-1.126-0.43-1.555,0l-1.328,1.328l4.376,4.375l1.327-1.328
+	C41.107,26.268,41.107,25.572,40.678,25.142"></path>
+<rect x="20.109" y="31.088" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -15.7303 30.3899)" fill="#FF9800" width="17.416" height="6.189"></rect>
+<rect x="34.521" y="23.837" transform="matrix(-0.7069 0.7073 -0.7073 -0.7069 80.6143 20.4602)" fill="#B0BEC5" width="3.094" height="6.189"></rect>
+<polygon fill="#FFC107" points="20.473,38.152 19,44 24.848,42.528 "></polygon>
+<polygon fill="#37474F" points="19.744,41.044 19,44 21.956,43.256 "></polygon>
+</svg>

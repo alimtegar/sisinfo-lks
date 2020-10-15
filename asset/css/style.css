@@ -1,0 +1,793 @@
+/*class*/
+.noresult {
+	text-align: center;
+}
+
+.noresult a {color: #3f51b5;}
+
+.noresult a:hover,
+.noresult a:focus {
+	text-decoration: underline; 
+}
+
+*[class|='alert'] {
+	position: fixed;
+	top: -40px;
+	z-index: 9999;
+	width: calc(100% - 20px);
+	overflow: hidden;
+	text-align: center;
+	animation: alert 2.5s;
+}
+
+/*ini animasi untuk alert*/
+@keyframes alert {
+	0% {top: -40px;}
+	20% {top: 9px;}
+	80% {top: 9px;}
+	100% {top: -40px;}
+}
+
+*[class|='alert'] p {
+	display: inline-block;
+	width: initial;
+	color: #fff;
+	font-weight: bold;
+	font-style: italic;
+	margin: auto;
+	padding: 10px 20px;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 3px;
+	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
+
+}
+
+.alert-w p {
+	background: #f44336;
+}
+
+.alert-i p {
+	background: #7fc563;
+}
+
+.info {
+	color: #666;
+	font-size: 14px;
+	font-style: italic;
+	margin-bottom: 10px; 
+}
+
+.form-second { display: none; }
+
+.td-option img {
+	width: 16px;
+	margin-bottom: -2px;
+}
+
+th.td-option img {
+	margin-right: 0px; 
+}
+
+.td-option a {
+	color: #000;
+	font-weight: bold;
+}
+
+.td-option button {
+	background: transparent !important;
+	color: #000;
+	font-weight: bold;
+	padding: 0px;
+	border: 0px;
+}
+
+.td-option a:hover,
+.td-option a:focus,
+.td-option button:hover,
+.td-option button:focus {
+	text-decoration: underline;
+}
+
+/*modal*/
+div[id|="modal"] {
+	position: fixed;
+	z-index: 999;
+	top: 0px;
+	left: 0px;
+	background: rgba(0,0,0,0.2);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.modal-close {
+	position: absolute;
+	top: -19px;
+	right: -19px;
+	display: inline-block;
+	background: #f44336;
+	padding: 8px 10px;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 100px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.modal-close img {
+	width: 16px;
+	margin-bottom: -3px;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+	background: #c3362b;
+}
+
+.modal-container {
+	position: relative;
+	display: inline-block;
+	background: #fff;
+	padding: 20px;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 3px;
+	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
+	animation: modal 1s;
+}
+
+/*ini animasi untuk modal*/
+@keyframes modal {
+	from {transform: scale(0);}
+	to {transform: scale(1);}
+}
+
+#modal-profil {
+	display: none;
+}
+
+#modal-profil .modal-container {
+	background: #fff;
+	z-index: 99;
+	margin: 43px 0px;
+	padding: 0px;
+	text-align: left;
+}
+
+#modal-profil label {
+	display: inline-block;
+	width: 120px;
+	margin: 11px;
+	margin-left: 0px;
+	vertical-align: top;
+}
+
+#modal-profil input {
+	width: 250px;
+	margin-bottom: 10px;
+}
+
+#modal-profil textarea {
+	width: 250px;
+	height: 70px;
+	margin-bottom: 10px;
+}
+
+#modal-profil select {
+	width: 272px;
+	margin-bottom: 10px;
+}
+
+#modal-profil button {
+	width: 100%;
+}
+
+#modal-nilai-edit .modal-container {
+	margin: 265px 0px;
+}
+
+#modal-nilai-edit table th:nth-child(1),
+#modal-nilai-edit table td:nth-child(1),
+#modal-nilai-edit table th:nth-child(6),
+#modal-nilai-edit table td:nth-child(6) {
+	padding: 10px 20px;
+}
+
+#modal-nilai-edit table th:nth-child(2),
+#modal-nilai-edit table td:nth-child(2),
+#modal-nilai-edit table th:nth-child(3),
+#modal-nilai-edit table td:nth-child(3),
+#modal-nilai-edit table th:nth-child(4),
+#modal-nilai-edit table td:nth-child(4) {
+	text-align: left;
+	padding-right: 50px; 
+}
+
+#modal-peserta-add .modal-container {
+	width: 400px;
+	margin: 105px 0px;
+	padding: 0px;
+	text-align: left;
+}
+
+#modal-peserta-add input {
+	width: calc(100% - 20px);
+	margin-bottom: 10px;
+}
+
+#modal-peserta-add select {
+	width: calc(100% + 2px);
+	margin-bottom: 10px;
+}
+
+#modal-peserta-add textarea {
+    width: calc(100% - 20px);
+    height: 64px;
+    margin-bottom: 6px;
+}
+#modal-peserta-add button {
+	width: calc(100% + 2px);
+	bottom: 20px;
+}
+
+#modal-peserta-add .form-second button:nth-last-child(1) {
+	margin-top: 10px;
+	background: #f44336;
+}
+
+#modal-peserta-add .form-second button:nth-last-child(1):hover,
+#modal-peserta-add .form-second button:nth-last-child(1):focus {
+	background: #c3362b;
+}
+
+#modal-peserta-edit .modal-container {
+	background: #fff;
+	z-index: 99;
+	margin: 43px 0px;
+	padding: 0px;
+	text-align: left;
+}
+
+#modal-peserta-edit label {
+	display: inline-block;
+	width: 120px;
+	margin: 11px;
+	margin-left: 0px;
+	vertical-align: top;
+}
+
+#modal-peserta-edit input {
+	width: 250px;
+	margin-bottom: 10px;
+}
+
+#modal-peserta-edit textarea {
+	width: 250px;
+	height: 70px;
+	margin-bottom: 10px;
+}
+
+#modal-peserta-edit select {
+	width: 272px;
+	margin-bottom: 10px;
+}
+
+#modal-peserta-edit button {
+	width: 100%;
+}
+
+#modal-peserta-delete .modal-container {
+	margin: 295px 0px;
+}
+
+#modal-peserta-delete p {
+	display: inline-block;
+	margin-right: 5px; 
+}
+
+#modal-peserta-delete button {
+	margin-left: 5px;
+}
+
+#modal-peserta-delete button:nth-child(3) {
+	background: #f44336;
+	transition: 0.2s;
+}
+
+#modal-peserta-delete button:nth-child(3):hover,
+#modal-peserta-delete button:nth-child(3):focus {
+	background: #c3362b;
+}
+
+/*main*/
+html {
+	font-family: "Arial", sans-serif;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: #f8f8f8;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+a { text-decoration: none; }
+
+a:focus { outline: none; }
+
+h1,h2,h3,h4,h5,h6,p {
+	color: #222;
+	margin: 0px;
+	padding: 0px;
+}
+
+table {
+	border-collapse: collapse;
+	border-style: hidden;
+	border-radius: 3px;
+	-ms-border: 1px solid #ccc;
+	box-shadow: 0px 0px 0px 1px #ccc;
+}
+
+table thead tr {
+	background: #f8f8f8;
+}
+
+table th,
+table td {
+	color: #222;
+	text-align: center;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+table a {color: #3f51b5;}
+
+table a:hover,
+table a:focus {
+	text-decoration: underline; 
+}
+
+/*form*/
+label {
+	display: inline-block;
+	color: #666;
+	font-size: 14px;
+	font-style: italic;
+	margin-bottom: 5px;
+}
+
+input,select,textarea,button {
+	font-family: "Arial", sans-serif;
+	font-size: 14px;
+	padding: 10px;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 3px;
+}
+
+input[readonly] {
+	background: #f8f8f8;
+}
+
+select {
+	padding: 9px 10px;
+}
+
+button {
+	background: #03a9f4;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+button[disabled] {
+	background: #9E9E9E;
+}
+
+button[disabled]:hover,
+button[disabled]:focus {
+	background: #9E9E9E;
+}
+
+button:hover,
+button:focus {
+	outline: none;
+	background: #0287c3;
+}
+
+/*nav*/
+nav {
+	width: 100%;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.nav-container {
+	width: calc(100% - 320px);
+	margin: auto;
+	padding: 10px;
+	overflow: hidden;
+}
+
+nav#nav-top { background: #1c292f; }
+
+nav#nav-top .nav-head {
+	position: absolute;
+	top: -20px;
+}
+
+nav#nav-top .nav-head a img {
+	height: 155px;
+	transition: 0.2s;
+}
+
+nav#nav-top .nav-head a:hover img,
+nav#nav-top .nav-head a:focus img {
+	padding-top: 5px;
+}
+
+nav#nav-top .nav-account {
+	float: right;
+}
+
+nav#nav-top .nav-account p {
+	display: inline-block;
+	color: #fff;
+	margin-right: 10px; 
+}
+
+nav#nav-top .nav-account a {
+	color: inherit;
+	font-weight: bold;
+}
+
+nav#nav-top .nav-form { float: right; }
+
+nav#nav-top .nav-form input { margin-right: 5px; }
+
+nav#nav-bottom { background: #323d43; }
+
+nav#nav-bottom .nav-menu { float: right; }
+
+nav#nav-bottom .nav-menu ul li { display: inline-block; }
+
+nav#nav-bottom .nav-menu ul li a {
+	display: inline-block;
+	color: rgba(255,255,255,0.4);
+	font-weight: bold;
+	padding: 10px;
+	margin-left: 5px; 
+	border: 1px solid transparent;
+	border-radius: 3px;
+	transition: 0.2s;
+}
+
+nav#nav-bottom .nav-menu ul li a:hover,
+nav#nav-bottom .nav-menu ul li a:focus,
+nav#nav-bottom .nav-menu ul li.li-active a {
+	background: #7fc563;
+	color: #fff;
+	border-color: rgba(0,0,0,0.2);
+}
+
+/*section*/
+section {
+	width: 100%;
+	padding: 20px 0px;
+	overflow: hidden;
+}
+
+.section-container {
+	background: #fff;
+	width: calc(100% - 320px);
+	min-height: 463px;
+	margin: auto;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 3px;
+}
+
+.section-head {
+	position: relative;
+	padding: 20px;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.section-head img {
+	float: left;
+	width: 48px;
+	margin-right: 5px; 
+}
+
+.section-head form {
+	position: absolute;
+	top: 22px;
+	right: 20px;
+}
+
+.section-head form input[type='search'] {
+	width: 250px;
+}
+
+.section-head form input,
+.section-head form select {
+	margin-right: 5px; 
+}
+
+.section-head .info {
+	margin-bottom: 0px;
+}
+
+.section-body {
+	position: relative;
+	padding: 20px;
+	overflow: hidden;
+}
+
+.section-part {
+	margin-bottom: 20px;
+}
+
+/*homepage*/
+#homepage .section-container {
+	background: transparent;
+	border: 0px;
+}
+
+#homepage-slider {
+	float: left;
+	background: #fff;
+	width: calc(65% - 24px);
+	height: 463px;
+	margin-right: 20px; 
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 3px;
+}
+
+#homepage-slider ul {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#homepage-slider ul li {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	animation: slider 15s infinite;
+}
+
+#homepage-slider ul li:nth-child(1) { animation-delay: 0s; }
+#homepage-slider ul li:nth-child(2) { animation-delay: 4s; }
+#homepage-slider ul li:nth-child(3) { animation-delay: 8s; }
+
+/*ini animasi untuk slider*/
+@keyframes slider {
+	0% {opacity: 0; left: -100%; z-index: 2;}
+	25% {opacity: 1; left: 0%; z-index: 2;}
+	40% {opacity: 1;}
+}
+
+#homepage-slider .slider-text {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: rgba(255,255,255,0.95);
+	width: 100%;
+	padding: 20px;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+#homepage-slider .slider-text img {
+	float: left;
+	width: 48px;
+	margin-right: 5px; 
+}
+
+#homepage-slider .slider-text .info {
+	margin-bottom: 0px;
+}
+
+#homepage-form {
+	float: left;
+	background: #fff;
+	width: 35%;
+	height: 463px;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 3px;
+}
+
+#homepage-form input {
+	width: calc(100% - 20px);
+	margin-bottom: 10px;
+}
+
+#homepage-form select {
+	width: calc(100% + 2px);
+	margin-bottom: 10px;
+}
+
+#homepage-form textarea {
+    width: calc(100% - 20px);
+    height: 64px;
+    margin-bottom: 6px;
+}
+
+#homepage-form button {
+	width: calc(100% + 2px);
+	margin-top: 13px;
+	bottom: 20px;
+}
+
+#homepage-form .form-second button:nth-last-child(1) {
+	margin-top: 10px;
+	background: #f44336;
+}
+
+#homepage-form .form-second button:nth-last-child(1):hover,
+#homepage-form .form-second button:nth-last-child(1):focus {
+	background: #c3362b;
+}
+
+/*nilai*/
+#nilai .section-body table {
+	width: 100%;
+}
+
+#nilai .section-body table th:nth-child(1),
+#nilai .section-body table td:nth-child(1) {
+	width: 30px;
+}
+
+#nilai .section-body table th:nth-child(3),
+#nilai .section-body table td:nth-child(3),
+#nilai .section-body table th:nth-child(4),
+#nilai .section-body table td:nth-child(4),
+#nilai .section-body table th:nth-child(5),
+#nilai .section-body table td:nth-child(5) {
+	text-align: left;
+}
+
+#nilai .section-body .info {
+	margin-bottom: 20px;
+}
+
+/*web-design*/
+#web-design .section-body h3 {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+#web-design .section-body p {
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+/*kisi*/
+#kisi .section-body h3 {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+#kisi .section-body p {
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+#kisi .section-body table th:nth-child(1) {
+	width: 200px;
+}
+
+#kisi .section-body table th,
+#kisi .section-body table td {
+	text-align: left;
+	vertical-align: top;
+}
+
+/*ketentuan*/
+#ketentuan .section-body h3 {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+#ketentuan .section-body p {
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+/*tempat*/
+#tempat .section-body h3 {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+#tempat .section-body p {
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+#tempat .section-body ul {
+	margin-bottom: 10px;
+}
+
+#tempat .section-body ul li p {
+	margin-bottom: 7px;
+}
+
+#tempat .section-body ul li b {
+	display: inline-block;
+	width: 150px;
+}
+
+/*kontak-alamat*/
+#kontak-alamat .section-body p {
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+#kontak-alamat .section-body ul {
+	margin-bottom: 10px;
+}
+
+#kontak-alamat .section-body ul li p {
+	margin-bottom: 7px;
+}
+
+#kontak-alamat .section-body ul li b {
+	display: inline-block;
+	width: 150px;
+}
+
+#kontak-alamat .section-body ul li a {
+	color: #3f51b5;
+}
+
+#kontak-alamat .section-body ul li a:hover,
+#kontak-alamat .section-body ul li a:focus {
+	text-decoration: underline;
+}
+
+/*footer*/
+footer {
+	background: #eee;
+	width: 100%;
+	border-top: 1px solid rgba(0,0,0,0.2);
+
+}
+
+.footer-container {
+	width: calc(100% - 320px);
+	margin: auto;
+	padding: 10px;
+	overflow: hidden;
+}
+
+footer p {
+	float: left;
+	color: #666;
+	font-size: 14px;
+	font-style: italic;
+}
+
+footer a {
+	color: #666;
+	font-weight: bold;
+}
+
+footer a:hover,
+footer a:focus {
+	text-decoration: underline; 
+}
+
+footer p.hit {
+	float: right;
+}
